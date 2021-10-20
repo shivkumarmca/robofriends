@@ -3,6 +3,11 @@ import CardList from './CardList';
 import SearchBox from './SearchBox';
 import {robots} from './robots'
 
+const state = {
+  robots: robots,
+  searchField: ''
+}
+
 const App = () => {
   return (
     <div className="tc">
