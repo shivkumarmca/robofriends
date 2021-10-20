@@ -3,7 +3,7 @@ import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
 import './App.css';
-import ErrorBoundry from '../components/ErrorBoundry';
+// import ErrorBoundry from '../components/ErrorBoundry';
 
 class App extends Component {
   constructor() {
@@ -36,9 +36,9 @@ class App extends Component {
           <h1 className='f1'>RoboFriends</h1>
           <SearchBox searchChange={this.onSearchChange}/>
           <Scroll>
-            <ErrorBoundry>
+            {/* <ErrorBoundry> */}
             <CardList robots={filteredRobots} />
-            </ErrorBoundry>
+            {/* </ErrorBoundry> */}
           </Scroll>
         </div>
       );
